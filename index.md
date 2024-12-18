@@ -1,5 +1,6 @@
 ---
 layout: default
+title: How Sample?
 ---
 
 # Links
@@ -10,15 +11,24 @@ layout: default
 
 [Go to Github Repository](https://github.com/JJong84/HowSample)
 
+# Index
+
+1. [Introduction](#introduction)
+2. [Breakdown Mode](#breakdown-mode)
+3. [Sampler Mode](#sampler-mode)
+4. [Reference](#reference)
+
 # Introduction
 
 Sampling has become one of the most important composition techniques in modern music production. Numerous masterpiece tracks have been born through sampling, and many producers learn and get inspirations from understanding how these tracks were created and identifying their original sources. The best way to train and improve sampling skills is experiencing these breakdowns.
 
-One representative database created by listeners' collective efforts is **“WhoSampled”**. It's a website that users can easily check which songs have sampled other tracks. However, it is hard to understand the specific sampling process because this site only provides basic song information. Additionally, users must breakdown the process by their own ears. And the descriptions are often inconsistent and unclear since it’s user-contributed.
+One representative database created by listeners' collective efforts is **“WhoSampled”** [https://www.whosampled.com/]. It's a website that users can easily check which songs have sampled other tracks. However, it is hard to understand the specific sampling process because this site only provides basic song information. Additionally, users must breakdown the process by their own ears. And the descriptions are often inconsistent and unclear since it’s user-contributed.
 
 Our web application, **“HowSample”** can be a great solution for these problems. It offers two modes, **breakdown mode** and **sampler mode**.
 
-## Breakdown Mode
+Our web application is built with React and Typescript, and the logic for the breakdown mode is built with Python.
+
+# Breakdown Mode
 
 Breakdown mode, a powerful feature that analyzes the detailed sampling process of a track. The second is the Sampler mode which works similar to hardware sampler instruments. Users can load, edit, and apply effects to samples directly in the web interface to compose their own music. Moreover, samples analyzed in the breakdown mode can be directly loaded and used.
 
@@ -32,12 +42,45 @@ For the every waveforms in the breakdown result, you can easily click them to pl
 
 The specific Breakdown process is explained at the following link:
 
-[Goole Colab Link](https://colab.research.google.com/drive/1B5A8QaD72YDuE8PHFNWZ3uCfZrzJbSHJ?usp=sharing)
+[Google Colab Link](https://colab.research.google.com/drive/1B5A8QaD72YDuE8PHFNWZ3uCfZrzJbSHJ?usp=sharing)
 
-## Reference
+## Web Interface
+
+![Breakdown Interface](/assets/images/break_result.jpeg)
+
+# Sampler Mode
+
+The **Sampler mode** functions similarly to traditional sampler instruments. In this mode, users can upload an audio file and transform it to create a new song, providing full creative control over the music editing and sampling process.
+
+When a music file is uploaded, it is added to a list of tracks. By selecting a track from the table, a modal window opens, allowing users to perform various transformations on the audio. Within this modal, users can:
+
+- Zoom in or out of the waveform for precise editing
+- Chop segments of the audio
+- Adjust the speed and pitch of the track in real time
+
+These transformations can be previewed immediately, enabling users to verify whether the sample is suitable for their music.
+
+Once the desired edits are completed, samples can be dragged and dropped onto a timeline at the top of the interface. To enhance visual organization, users have the option to increase the number of lines displayed in the timeline.
+
+After editing, users can download the final composition as a `.wav` file by clicking the **Download** button.
+
+For the demo, the application includes an example where the part of the **"Daft Punk - One More Time"** is recreated using the original track **"Eddie Johns - More Spell on You"**.
+
+## Web Interface
+
+![Sampler Interface](/assets/images/sampler.jpeg)
+
+![Sampler Modal Interface](/assets/images/sampler_modal.jpeg)
+
+# Reference
 
 Rouard, Simon, Francisco Massa, and Alexandre Défossez. **"Hybrid transformers for music source separation."**  
 _ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)._ IEEE, 2023.
 
 Kim, Taejun, and Juhan Nam. **"All-in-one metrical and functional structure analysis with neighborhood attentions on demixed audio."**  
 _2023 IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)._ IEEE, 2023.
+
+The following open-source repositories were also referenced:
+
+- [olvb/phaze](https://github.com/olvb/phaze)
+- [indutny/fft.js](https://github.com/indutny/fft.js/blob/master/lib/fft.js)
