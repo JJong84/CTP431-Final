@@ -24,7 +24,7 @@ Our web application is built with React and Typescript, and the logic for the br
 
 # Breakdown Mode
 
-Breakdown mode, a powerful feature that analyzes the detailed sampling process of a track. The second is the Sampler mode which works similar to hardware sampler instruments. Users can load, edit, and apply effects to samples directly in the web interface to compose their own music. Moreover, samples analyzed in the breakdown mode can be directly loaded and used.
+Breakdown mode has a powerful feature that analyzes the detailed sampling process of a track. Moreover, samples analyzed in the breakdown mode can be directly loaded and used in sampler mode.
 
 The Breakdown mode takes two inputs: the **target song** to be analyzed and the **original sampled song**. You can easily upload them by pressing **“SELECT TARGET AUDIO FILE”**, **“SELECT ORIGINAL AUDIO FILE”** buttons. Then, the uploaded song will be sent to the server and the breakdown result is sent back to the web. However, this feature is not implemented since our algorithm was not generalized yet.
 
