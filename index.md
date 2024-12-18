@@ -3,19 +3,13 @@ layout: default
 title: How Sample?
 ---
 
-# Links
-
-[Go to Project](https://jjong84.github.io/HowSample)
-
-[Go to Google Colab Code](https://colab.research.google.com/drive/1B5A8QaD72YDuE8PHFNWZ3uCfZrzJbSHJ?usp=sharing)
-
-[Go to Github Repository](https://github.com/JJong84/HowSample)
-
 # Index
 
 1. [Introduction](#introduction)
 2. [Breakdown Mode](#breakdown-mode)
+   1. [Web Interface](#web-interface)
 3. [Sampler Mode](#sampler-mode)
+   1. [Web Interface](#web-interface-1)
 4. [Reference](#reference)
 
 # Introduction
