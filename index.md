@@ -16,7 +16,7 @@ title: How Sample?
 
 Sampling has become one of the most important composition techniques in modern music production. Numerous masterpiece tracks have been born through sampling, and many producers learn and get inspirations from understanding how these tracks were created and identifying their original sources. The best way to train and improve sampling skills is experiencing these breakdowns.
 
-One representative database created by listeners' collective efforts is **“WhoSampled”** [https://www.whosampled.com/]. It's a website that users can easily check which songs have sampled other tracks. However, it is hard to understand the specific sampling process because this site only provides basic song information. Additionally, users must breakdown the process by their own ears. And the descriptions are often inconsistent and unclear since it’s user-contributed.
+One representative database created by listeners' collective efforts is [**“WhoSampled”**](https://www.whosampled.com/). It's a website that users can easily check which songs have sampled other tracks. However, it is hard to understand the specific sampling process because this site only provides basic song information. Additionally, users must breakdown the process by their own ears. And the descriptions are often inconsistent and unclear since it’s user-contributed.
 
 Our web application, **“HowSample”** can be a great solution for these problems. It offers two modes, **breakdown mode** and **sampler mode**.
 
